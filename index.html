@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SimPEG: Simulation and Parameter Estimation in Geophysics</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://simpeg.xyz/img/logo.png">
+    <meta name="twitter:site" content="@simpegpy">
+    <meta name="twitter:title" content="SimPEG">
+    <meta name="twitter:description" content="Open-source framework for geophysical inversions">
+
+    <meta property="og:title" content="SimPEG">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://simpeg.xyz/">
+    <meta property="og:site_name" content="SimPEG">
+    <meta property="og:image" content="https://simpeg.xyz/img/logo.png">
+    <meta property="og:description" content="Open-source framework for geophysical inversions">
+</head>
+<body>
+    <ul class="nav">
+        <li><a href="/why.html">Why</a></li>
+        <li><a href="#methods">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contribute">Contribute</a></li>
+        <li><a href="https://github.com/simpeg"><i class="fab fa-github fa-lg"></i></a></li>
+        <li><a href="http://slack.simpeg.xyz"><i class="fab fa-slack fa-lg"></i></a></li>
+        <li><a href="https://groups.google.com/forum/#!forum/simpeg"><i class="fas fa-envelope fa-lg"></i></a></li>
+        <li><a href="https://www.youtube.com/c/geoscixyz"><i class="fab fa-youtube fa-lg"></i></a></li>
+        <li><a href="https://docs.simpeg.xyz"><i class="fas fa-book fa-lg"></i></a></li>
+    </ul>
+    <div class="container">
+        <center><img src="/img/logo-block.png" width="30%"></center>
+        <h1 style="text-align:center;color:#333;">Simulation and Parameter Estimation in Geophysics</h1>
+
+        <div style="margin: 50px 0;">
+            <p style="text-align:center;">An open source python package for simulation and gradient based parameter estimation in geophysical applications.</p>
+        </div>
+
+
+        <h2 id="methods">Geophysical Methods</h2>
+        <p>
+            Contribute to a growing community of geoscientists building an open foundation for geophysics.
+            SimPEG provides a collection of geophysical simulation and inversion tools that are built in a
+            consistent framework.
+        </p>
+        <div class="columns">
+            <div class="column">
+                <ul>
+                    <li>Gravity</li>
+                    <li>Magnetics</li>
+                        <ul>
+                            <li>Viscous Remanent Magnetization</li>
+                        </ul>
+                    <li>Direct Current Resistivity</li>
+                    <li>Induced Polarization</li>
+                    <li>Electromagnetics</li>
+                        <ul>
+                            <li>Time domain</li>
+                            <li>Frequency domain</li>
+                        </ul>
+                    <li>Magnetotellurics</li>
+                    <li>Richards Equation</li>
+                </ul>
+            </div>
+            <div class="column">
+                <img src="/img/vtki_laguna_del_maule.png" width="90%">
+            </div>
+        </div>
+
+        <h2 id="simulations">Forward Simulations</h2>
+        <p>
+            Finite volume tools that work across many different discretizations and dimensions.
+        </p>
+        <div class="columns">
+            <div class="column">
+                <ul>
+                    <li>Tensor Mesh</li>
+                    <li>OcTree Mesh</li>
+                    <li>QuadTree Mesh</li>
+                    <li>Logicaly Rectangular Mesh</li>
+                    <li>Cylindrical Mesh</li>
+                    <br>
+                    <li>Access to Derivatives</li>
+                    <li>Plotting Utilities</li>
+                    <li>VTK Export</li>
+                </ul>
+            </div>
+            <div class="column">
+                <img src="/img/finite-volume.png" style="width:90%;">
+            </div>
+        </div>
+
+
+        <h2 id="inversion">Inversion Components</h2>
+        <p>
+            The SimPEG inversion framework is modular, allowing you to explore, experiment
+            and iterate over a variety of approaches to the inverse problem.
+        </p>
+        <div class="columns">
+            <div class="column">
+                <ul>
+                    <li>Optimization</li>
+                    <li>Regularization</li>
+                    <li>Data Misfits</li>
+                    <li>Parametric Models</li>
+                    <li>Joint Inversions</li>
+                </ul>
+            </div>
+            <div class="column">
+                    <img src="/img/simpeg-framework.png" style="width:90%;">
+            </div>
+        </div>
+
+        <h2 id="start">&#x1F680; Get Started &#x1F680;</h2>
+        <p>
+            The easiest way to install SimPEG is from <a href="https://pypi.python.org/pypi/simpeg">PyPI</a>,
+            using <a href="https://pypi.python.org/pypi/pip">pip</a>.
+            If you get stuck or have no idea what a <i>pip</i> is, jump on <a href="http://slack.simpeg.xyz">Slack</a> or
+            <a href="https://groups.google.com/forum/#!forum/simpeg"Group">Google Groups</a> to
+            ask the community a question!!
+        </p>
+        <div class="columns">
+            <div class="column">
+                <ul class="icons">
+                    <li><i class="fab fa-python fa-lg"></i> <a href="https://docs.simpeg.xyz/content/basic/installing.html">Install SimPEG</a></li>
+                    <li><i class="fas fa-book fa-lg"></i> <a href="https://docs.simpeg.xyz">Read the documentation</a></li>
+                    <li><i class="fab fa-slack fa-lg"></i> <a href="http://slack.simpeg.xyz">Join the discussion</a></li>
+                    <li><i class="fas fa-copy fa-lg"></i> <a href="https://doi.org/10.1016/j.cageo.2015.09.015">Read the SimPEG paper</a></li>
+                    <li><i class="fab fa-github fa-lg"></i> <a href="https://github.com/simpeg/simpeg">Read some code</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                    <iframe width="90%" height="200" src="//www.youtube.com/embed/yUm01YsS9hQ" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <h2 id="contact">&#x1F4E2; Contacting Us &#x1F4E2;</h2>
+        Please don't hesitate to reach out and ask a question! We love to hear about how people are using or want to use SimPEG!
+        <p>
+            <ul class="icons">
+                <li><i class="fas fa-envelope fa-lg"></i>Subscribe or send an email to our mailing list on <a href="https://groups.google.com/forum/#!forum/simpeg">Google Groups</a></li>
+                <li><i class="fab fa-slack fa-lg"></i>Send us a message on <a href="http://slack.simpeg.xyz">Slack</a></li>
+                <li><i class="fab fa-github fa-lg"></i>Contact us on <a href="https://github.com/simpeg">GitHub</a> by creating a <a href="https://github.com/simpeg/simpeg/issues/new">new issue</a>.</li>
+            </ul>
+        </p>
+
+        <h2 id="contribute">&#x1F64C; Contribute &#x1F64C;</h2>
+        <p>
+            SimPEG is a community of scientists and volunteers who are excited to help you out,
+            please help give back to the community by sharing your successes and citing the project!
+            Here are some ways you can contribute:
+            <ul class="icons">
+                <li><i class="fas fa-bullhorn"></i>Talk about SimPEG, share links on <a href="https://twitter.com/simpegpy">social media</a>, show <a href="/img/logo.png" target="_blank">our logo</a> in your talks.</li>
+                <li><i class="fas fa-bookmark fa-lg"></i> Cite the <a href="https://scholar.google.ca/scholar?oi=bibs&hl=en&cites=880081470240461169&as_sdt=5">papers and project</a> (see below)</li>
+                <li><i class="fas fa-bug fa-lg"></i><a href="https://github.com/simpeg/simpeg/issues">Submitting bugs</a> when things don't work</li>
+                <li><i class="fas fa-book fa-lg"></i>Fix typos and add examples to the <a href="https://docs.simpeg.xyz">documentation</a></li>
+                <li><i class="fa fa-terminal"></i><a href="https://github.com/simpeg/simpeg/blob/master/CONTRIBUTING.rst">Contribute some code</a></li>
+            </ul>
+        </p>
+        <h4>SimPEG Framework Paper</h4>
+        <div class="code"><code>
+            Cockett, Rowan, Seogi Kang, Lindsey J. Heagy, Adam Pidlisecky, and Douglas W. Oldenburg. "<b>SimPEG: An Open Source Framework for Simulation and Gradient Based Parameter Estimation in Geophysical Applications</b>" Computers & Geosciences, September 2015. <a href="https://doi.org/10.1016/j.cageo.2015.09.015">doi:10.1016/j.cageo.2015.09.015</a>.
+        </code></div>
+        <h4>Electromagnetics Simulations & Inversions</h4>
+        <div class="code"><code>
+            Lindsey J. Heagy, Rowan Cockett, Seogi Kang, Gudni K. Rosenkjaer, Douglas W. Oldenburg. "<b>A framework for simulation and inversion in electromagnetics</b>" Computers & Geosciences, September 2017. <a href="https://doi.org/10.1016/j.cageo.2017.06.018">doi:10.1016/j.cageo.2017.06.018</a>
+        </code></div>
+    </div>
+</body>
+</html>
