@@ -52,7 +52,7 @@ a:hover{
       margin-left: 10px;
     }
 }
-h1, h2, h3, h4, h5{
+h1{
     font-family: "Oswald", Helvetica, Arial, sans-serif;
     font-weight: 200;
 }
@@ -60,6 +60,13 @@ h2{
     font-family: "Raleway", Helvetica, Arial, sans-serif;
     margin: 60px 0 20px 0;
     border-bottom: 1px solid #B2B2B2;
+}
+.column > h3{
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+.column > p{
+    margin: 0 20px;
 }
 hr{
     margin: 0 0 30px 0;

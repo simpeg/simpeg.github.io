@@ -21,6 +21,15 @@
     <meta property="og:site_name" content="SimPEG">
     <meta property="og:image" content="https://simpeg.xyz/img/logo.png">
     <meta property="og:description" content="Open-source framework for geophysical inversions">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-45185336-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-45185336-1');
+    </script>
 </head>
 <body>
     <ul class="nav">
@@ -55,10 +64,10 @@
                     <li>Gravity</li>
                     <li>Magnetics</li>
                         <ul>
-                            <li>Viscous Remanent Magnetization</li>
+                            <li>Viscous remanent magnetization</li>
                         </ul>
-                    <li>Direct Current Resistivity</li>
-                    <li>Induced Polarization</li>
+                    <li>Direct current resistivity</li>
+                    <li>Induced polarization</li>
                     <li>Electromagnetics</li>
                         <ul>
                             <li>Time domain</li>
@@ -76,19 +85,21 @@
         <h2 id="simulations">Forward Simulations</h2>
         <p>
             Finite volume tools that work across many different discretizations and dimensions.
+            Simulate your geophysical method in 1D, 2D, 2.5D, 3D and through time.
+            Refine around areas of interest using an OcTree.
         </p>
         <div class="columns">
             <div class="column">
                 <ul>
-                    <li>Tensor Mesh</li>
-                    <li>OcTree Mesh</li>
-                    <li>QuadTree Mesh</li>
-                    <li>Logicaly Rectangular Mesh</li>
-                    <li>Cylindrical Mesh</li>
+                    <li>Tensor mesh</li>
+                    <li>OcTree mesh</li>
+                    <li>QuadTree mesh</li>
+                    <li>Logicaly rectangular mesh</li>
+                    <li>Cylindrical mesh</li>
                     <br>
-                    <li>Access to Derivatives</li>
-                    <li>Plotting Utilities</li>
-                    <li>VTK Export</li>
+                    <li>Access to derivatives</li>
+                    <li>Plotting dtilities</li>
+                    <li>VTK export</li>
                 </ul>
             </div>
             <div class="column">
@@ -107,9 +118,9 @@
                 <ul>
                     <li>Optimization</li>
                     <li>Regularization</li>
-                    <li>Data Misfits</li>
-                    <li>Parametric Models</li>
-                    <li>Joint Inversions</li>
+                    <li>Data misfits</li>
+                    <li>Parametric models</li>
+                    <li>Joint inversions</li>
                 </ul>
             </div>
             <div class="column">
@@ -172,6 +183,52 @@
         <div class="code"><code>
             Lindsey J. Heagy, Rowan Cockett, Seogi Kang, Gudni K. Rosenkjaer, Douglas W. Oldenburg. "<b>A framework for simulation and inversion in electromagnetics</b>" Computers & Geosciences, September 2017. <a href="https://doi.org/10.1016/j.cageo.2017.06.018">doi:10.1016/j.cageo.2017.06.018</a>
         </code></div>
+
+        <h2 id="projects">Project Ecosystem</h2>
+        <p>
+            SimPEG is an ecosystem with many interrelated projects and repositories.
+        </p>
+
+        <div class="columns">
+            <div class="column">
+                <h3>simpeg</h3>
+                <p>Simulation and inversion utilities for many different geophysical methods.</p>
+                <ul class="icons">
+                    <li><i class="fab fa-github fa-lg"></i><a href="https://github.com/simpeg/simpeg">simpeg/simpeg</a></li>
+                    <li><i class="fas fa-book fa-lg"></i><a href="https://docs.simpeg.xyz">https://docs.simpeg.xyz</a></li>
+                    <li><i class="fa fa-check fa-lg" style="color:green"></i>Stable</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>discretize</h3>
+                <p>Finite volume and visualization programs for solving and inverting PDEs.</p>
+                <ul class="icons">
+                    <li><i class="fab fa-github fa-lg"></i><a href="https://github.com/simpeg/discretize">simpeg/discretize</a></li>
+                    <li><i class="fas fa-book fa-lg"></i><a href="https://discretize.simpeg.xyz">https://discretize.simpeg.xyz</a></li>
+                    <li><i class="fa fa-check fa-lg" style="color:green"></i>Stable</li>
+                </ul>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column">
+                <h3>pymatsolver</h3>
+                <p>A sparse matrix solver for Python. Solving Ax = b should be easy.</p>
+                <ul class="icons">
+                    <li><i class="fab fa-github fa-lg"></i><a href="https://github.com/simpeg/pymatsolver">simpeg/pymatsolver</a></li>
+                    <li><i class="fas fa-book fa-lg"></i><a href="https://pymatsolver.readthedocs.io/">https://pymatsolver.rtfd.org</a></li>
+                    <li><i class="fa fa-check fa-lg" style="color:green"></i>Stable</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>geoana</h3>
+                <p>A collection of mostly analytic functions in geophysics.</p>
+                <ul class="icons">
+                    <li><i class="fab fa-github fa-lg"></i><a href="https://github.com/simpeg/discretize">simpeg/discretize</a></li>
+                    <li><i class="fas fa-book fa-lg"></i><a href="https://geoana.readthedocs.io/">https://geoana.rtfd.org</a></li>
+                    <li><i class="fa fa-sync-alt fa-lg" style="color:green"></i>Ready, but changing</li>
+                </ul>
+            </div>
+        </div>
     </div>
 </body>
 </html>
