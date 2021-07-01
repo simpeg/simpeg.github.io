@@ -1,6 +1,6 @@
 ![simpeglogo](img/logo.png)
 
-simpegWebsite
-=============
+simpeg website
+==============
 
 Website for SimPEG: http://simpeg.xyz
