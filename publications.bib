@@ -1,99 +1,114 @@
 % 2021
 
-@article{Werthmuller2021,
+@article{Werthmuller2020,
+    abstract = {Large-scale modelling of three-dimensional controlled-source electromagnetic (CSEM) surveys used to be feasible only for large companies and research consortia. This has changed over the last few years, and today there exists a selection of different open-source codes available to everyone. Using four different codes in the Python ecosystem, we perform simulations for increasingly complex models in a shallow marine setting. We first verify the computed fields with semi-analytical solutions for a simple layered model. Then we validate the responses of a more complex block model by comparing results obtained from each code. Finally we compare the responses of a real world model with results from the industry. On the one hand, these validations show that the open-source codes are able to compute comparable CSEM responses for challenging, large-scale models. On the other hand, they show many general and method-dependent problems that need to be faced for obtaining accurate results. Our comparison includes finite-element and finite-volume codes using structured rectilinear and octree meshes as well as unstructured tetrahedral meshes. Accurate responses can be obtained independently of the chosen method and the chosen mesh type. The runtime and memory requirements vary greatly based on the choice of iterative or direct solvers. However, we have found that much more time was spent on designing the mesh and setting up the simulations than running the actual computation. The challenging task is, irrespective of the chosen code, to appropriately discretize the model. We provide three models, each with their corresponding discretization and responses of four codes, which can be used for validation of new and existing codes. The collaboration of four code maintainers trying to achieve the same task brought in the end all four codes a significant step further. This includes improved meshing and interpolation capabilities, resulting in shorter runtimes for the same accuracy. We hope that these results may be useful for the CSEM community at large and that we can build over time a suite of benchmarks that will help to increase the confidence in existing and new 3D CSEM codes.},
     archivePrefix = {arXiv},
     arxivId = {2010.12926},
-    author = {Werthmüller, Dieter and Rochlitz, Raphael and Castillo-Reyes, Octavio and Heagy, Lindsey},
-    title = "{Towards an open-source landscape for 3D CSEM modelling}",
-    journal = {Geophysical Journal International},
-    year = {2021},
-    month = {06},
-    abstract = "{Large-scale modelling of three-dimensional controlled-source electromagnetic (CSEM) surveys used to be feasible only for large companies and research consortia. This has changed over the last few years, and today there exists a selection of different open-source codes available to everyone. Using four different codes in the Python ecosystem, we perform simulations for increasingly complex models in a shallow marine setting. We first verify the computed fields with semi-analytical solutions for a simple layered model. Then we validate the responses of a more complex block model by comparing results obtained from each code. Finally we compare the responses of a real world model with results from the industry. On the one hand, these validations show that the open-source codes are able to compute comparable CSEM responses for challenging, large-scale models. On the other hand, they show many general and method-dependent problems that need to be faced for obtaining accurate results. Our comparison includes finite-element and finite-volume codes using structured rectilinear and octree meshes as well as unstructured tetrahedral meshes. Accurate responses can be obtained independently of the chosen method and the chosen mesh type. The runtime and memory requirements vary greatly based on the choice of iterative or direct solvers. However, we have found that much more time was spent on designing the mesh and setting up the simulations than running the actual computation. The challenging task is, irrespective of the chosen code, to appropriately discretize the model. We provide three models, each with their corresponding discretization and responses of four codes, which can be used for validation of new and existing codes. The collaboration of four code maintainers trying to achieve the same task brought in the end all four codes a significant step further. This includes improved meshing and interpolation capabilities, resulting in shorter runtimes for the same accuracy. We hope that these results may be useful for the CSEM community at large and that we can build over time a suite of benchmarks that will help to increase the confidence in existing and new 3D CSEM codes.}",
-    issn = {0956-540X},
+    author = {Werthm{\"{u}}ller, Dieter and Rochlitz, Raphael and Castillo-Reyes, Octavio and Heagy, Lindsey},
     doi = {10.1093/gji/ggab238},
-    url = {https://doi.org/10.1093/gji/ggab238},
-    note = {ggab238},
-    eprint = {https://academic.oup.com/gji/advance-article-pdf/doi/10.1093/gji/ggab238/38711146/ggab238.pdf},
+    eprint = {2010.12926},
+    issn = {0956-540X},
+    journal = {Geophysical Journal International},
+    keywords = {controlled source electromagnetics,csem,electrical properties,elling,numerical mod-},
+    month = {jun},
+    pages = {1--18},
+    title = {{Towards an open-source landscape for 3D CSEM modelling}},
+    url = {https://github.com/swung-research/3d-csem-open-source-landscape},
+    year = {2021}
 }
 
 % 2020
 
-@misc{Astic2020,
+@article{Astic2021,
+    abstract = {In a previous paper, we introduced a framework for carrying out petrophysically and geologically guided geophysical inversions. In that framework, petrophysical and geological information is modelled with a Gaussian mixture model (GMM). In the inversion, the GMM serves as a prior for the geophysical model. The formulation and applications were confined to problems in which a single physical property model was sought, and a single geophysical data set was available. In this paper, we extend that framework to jointly invert multiple geophysical data sets that depend on multiple physical properties. The petrophysical and geological information is used to couple geophysical surveys that, otherwise, rely on independent physics. This requires advancements in two areas. First, an extension from a univariate to a multivariate analysis of the petrophysical data, and their inclusion within the inverse problem, is necessary. Secondly, we address the practical issues of simultaneously inverting data from multiple surveys and finding a solution that acceptably reproduces each one, along with the petrophysical and geological information. To illustrate the efficacy of our approach and the advantages of carrying out multi-physics inversions coupled with petrophysical and geological information, we invert synthetic gravity and magnetic data associated with a kimberlite deposit. The kimberlite pipe contains two distinct facies embedded in a host rock. Inverting the data sets individually, even with petrophysical information, leads to a binary geological model: background or undetermined kimberlite. A multi-physics inversion, with petrophysical information, differentiates between the two main kimberlite facies of the pipe. Through this example, we also highlight the capabilities of our framework to work with interpretive geological assumptions when minimal quantitative information is available. In those cases, the dynamic updates of the GMM allow us to perform multi-physics inversions by learning a petrophysical model.},
     archivePrefix = {arXiv},
     arxivId = {2002.09515},
     author = {Astic, Thibaut and Heagy, Lindsey J and Oldenburg, Douglas W},
-    title = "{Petrophysically and geologically guided multi-physics inversion using a dynamic Gaussian mixture model}",
-    journal = {Geophysical Journal International},
-    volume = {224},
-    number = {1},
-    pages = {40-68},
-    year = {2020},
-    month = {08},
-    abstract = "{In a previous paper, we introduced a framework for carrying out petrophysically and geologically guided geophysical inversions. In that framework, petrophysical and geological information is modelled with a Gaussian mixture model (GMM). In the inversion, the GMM serves as a prior for the geophysical model. The formulation and applications were confined to problems in which a single physical property model was sought, and a single geophysical data set was available. In this paper, we extend that framework to jointly invert multiple geophysical data sets that depend on multiple physical properties. The petrophysical and geological information is used to couple geophysical surveys that, otherwise, rely on independent physics. This requires advancements in two areas. First, an extension from a univariate to a multivariate analysis of the petrophysical data, and their inclusion within the inverse problem, is necessary. Secondly, we address the practical issues of simultaneously inverting data from multiple surveys and finding a solution that acceptably reproduces each one, along with the petrophysical and geological information. To illustrate the efficacy of our approach and the advantages of carrying out multi-physics inversions coupled with petrophysical and geological information, we invert synthetic gravity and magnetic data associated with a kimberlite deposit. The kimberlite pipe contains two distinct facies embedded in a host rock. Inverting the data sets individually, even with petrophysical information, leads to a binary geological model: background or undetermined kimberlite. A multi-physics inversion, with petrophysical information, differentiates between the two main kimberlite facies of the pipe. Through this example, we also highlight the capabilities of our framework to work with interpretive geological assumptions when minimal quantitative information is available. In those cases, the dynamic updates of the GMM allow us to perform multi-physics inversions by learning a petrophysical model.}",
-    issn = {0956-540X},
     doi = {10.1093/gji/ggaa378},
-    url = {https://doi.org/10.1093/gji/ggaa378},
-    eprint = {https://academic.oup.com/gji/article-pdf/224/1/40/34193255/ggaa378.pdf},
+    eprint = {2002.09515},
+    issn = {0956-540X},
+    journal = {Geophysical Journal International},
+    keywords = {Interpretation,Inverse theory,Joint Inversion,Magnetic anomalies: modelling,Numerical solutions,Persistence,Probability distributions,clustering,correlations,memory},
+    month = {nov},
+    number = {1},
+    pages = {40--68},
+    title = {{Petrophysically and geologically guided multi-physics inversion using a dynamic Gaussian mixture model}},
+    url = {https://github.com/simpeg-research/Astic-2020-JointInversion},
+    volume = {224},
+    year = {2020}
 }
 
-@incollection{Fan2020,
-    title = {Improving water security in Mon State, Myanmar via geophysical capacity building},
-    author = {Fan, Kevin and Oldenburg, Douglas W and Maxwell, Michael and Cowan, Devin and Kang, Seogi and Heagy, Lindsey J and Capriotti, Joseph},
+@inproceedings{Fan2020,
+    author = {Fan, Kevin and Oldenburg, Douglas W. and Maxwell, Michael and Cowan, Devin and Kang, Seogi and Heagy, Lindsey J. and Capriotti, Joseph},
     booktitle = {SEG Technical Program Expanded Abstracts 2020},
+    doi = {10.1190/segam2020-3428432.1},
+    month = {sep},
     pages = {3355--3360},
-    year = {2020},
     publisher = {Society of Exploration Geophysicists},
-    doi = {10.1190/segam2020-3428432.1}
+    title = {{Improving water security in Mon State, Myanmar via geophysical capacity building}},
+    year = {2020}
 }
 
 @article{Fournier2020,
-    title = {Sparse magnetic vector inversion in spherical coordinates},
-    author = {Fournier, Dominique and Heagy, Lindsey J and Oldenburg, Douglas W},
-    journal = {Geophysics},
-    volume = {85},
+    abstract = {Magnetic vector inversion (MVI) has received considerable attention over recent years for processing magnetic field data that are affected by remanent magnetization. However, the magnetization models obtained with current inversion algorithms are generally too smooth to be easily interpreted geologically. To address this, we have reviewed the MVI formulated in a spherical coordinate system. We tackle convergence issues posed by the nonlinear transformation from Cartesian to spherical coordinates by using an iterative sensitivity weighting approach and a scaling of the spherical parameters. The spherical formulation allows us to impose sparsity assumptions on the magnitude and direction of magnetization independently and, as a result, the inversion recovers simpler and more coherent magnetization orientations. The numerical implementation of our algorithm on large-scale problems is facilitated by discretizing the forward problem using tiled octree meshes. All of our results are generated using the open-source SimPEG software. We determine the enhanced capabilities of our algorithm on a large airborne magnetic survey collected over the Kevitsa Ni-Cu-platinum group elements (PGE) deposit. The recovered magnetization direction inside the ultramafic intrusion and in the host stratigraphy is consistent with laboratory measurements and provides evidence for tectonic deformation.},
+    author = {Fournier, Dominique and Heagy, Lindsey J. and Oldenburg, Douglas W.},
+    doi = {10.1190/geo2019-0244.1},
+    issn = {0016-8033},
+    journal = {GEOPHYSICS},
+    month = {may},
     number = {3},
     pages = {J33--J49},
-    year = {2020},
     publisher = {Society of Exploration Geophysicists},
-    doi = {10.1190/geo2019-0244.1}
+    title = {{Sparse magnetic vector inversion in spherical coordinates}},
+    volume = {85},
+    year = {2020}
 }
 
-@article{Heagy2020,
-    author = {Lindsey J. Heagy and Seogi Kang and Rowan Cockett and Douglas W. Oldenburg},
-    title = {Open-source software for simulations and inversions of airborne electromagnetic data},
-    journal = {Exploration Geophysics},
-    volume = {51},
-    number = {1},
-    pages = {38-44},
-    year  = {2020},
-    publisher = {Taylor & Francis},
-    doi = {10.1080/08123985.2019.1583538},
+@article{Heagy2020a,
+    abstract = {Inversion of airborne electromagnetic data is often an iterative process, not only requiring that the researcher be able to explore the impact of changing components, such as the choice of regularisation functional or model parameterisation, but also often requiring that forward simulations be run and fields and fluxes visualised in order to build an understanding of the physical processes governing what we observe in the data. In the hope of facilitating this exploration and promoting the reproducibility of geophysical simulations and inversions, we have developed the open-source software package SimPEG. The software has been designed to be modular and extensible, with the goal of allowing researchers to interrogate all of the components and to facilitate the exploration of new inversion strategies. We present an overview of the software in its application to airborne electromagnetics and demonstrate its use for visualising fields and fluxes in a forward simulation, as well as its flexibility in formulating and solving the inverse problem. We invert a line of airborne time-domain electromagnetic data over a conductive vertical plate using a 1D voxel inversion, a 2D voxel inversion and a parametric inversion, where all of the forward modelling is done on a 3D grid. The results in this paper can be reproduced using the provided Jupyter notebooks. The Python software can also be modified to allow users to experiment with parameters and explore the physics of the electromagnetics and intricacies of inversion.},
     archivePrefix = {arXiv},
-    arxivId = {1902.08238}
+    arxivId = {1902.08238},
+    author = {Heagy, Lindsey J. and Kang, Seogi and Cockett, Rowan and Oldenburg, Douglas W.},
+    doi = {10.1080/08123985.2019.1583538},
+    eprint = {1902.08238},
+    issn = {18347533},
+    journal = {Exploration Geophysics},
+    keywords = {3D modelling,Airborne electromagnetics,electromagnetic geophysics,inversion,programming},
+    month = {jan},
+    number = {1},
+    pages = {38--44},
+    title = {{Open-source software for simulations and inversions of airborne electromagnetic data}},
+    url = {https://github.com/simpeg-research/heagy-2018-AEM},
+    volume = {51},
+    year = {2020}
 }
 
-@incollection{Kang2020,
-    title = {Open-source geophysical software development for groundwater applications},
-    author = {Kang, Seogi and Capriotti, Joseph and Oldenburg, Douglas W and Heagy, Lindsey J and Cowan, Devin},
+@inproceedings{Kang2020,
+    author = {Kang, Seogi and Capriotti, Joseph and Oldenburg, Douglas W. and Heagy, Lindsey J. and Cowan, Devin},
     booktitle = {SEG Technical Program Expanded Abstracts 2020},
+    doi = {10.1190/segam2020-3425913.1},
+    month = {sep},
     pages = {1989--1993},
-    year = {2020},
     publisher = {Society of Exploration Geophysicists},
-    doi = {10.1190/segam2020-3425913.1}
+    title = {{Open-source geophysical software development for groundwater applications}},
+    year = {2020}
 }
 
 @article{Kang2020a,
-    author = {Kang, S. and Oldenburg, D.W. and Heagy, L.J.},
-    doi = {10.1080/08123985.2019.1690393},
-    issn = {18347533},
-    journal = {Exploration Geophysics},
-    keywords = {Airborne electromagnetics,electromagnetic geophysics,induced polarisation},
-    number = {1},
-    title = {{Detecting induced polarisation effects in time-domain data: a modelling study using stretched exponentials}},
-    volume = {51},
-    year = {2020},
     archivePrefix = {arXiv},
-    arxivId = {1909.12993}
+    arxivId = {1909.12993},
+    author = {Kang, Seogi and Oldenburg, Douglas W and Heagy, Lindsey J},
+    doi = {10.1080/08123985.2019.1690393},
+    eprint = {1909.12993},
+    issn = {0812-3985},
+    journal = {Exploration Geophysics},
+    month = {jan},
+    number = {1},
+    pages = {122--133},
+    title = {{Detecting induced polarisation effects in time-domain data: a modelling study using stretched exponentials}},
+    url = {https://github.com/simpeg-research/kang-2018-AEM},
+    volume = {51},
+    year = {2020}
 }
 
 @incollection{Oldenburg2020,
@@ -107,96 +122,126 @@
 }
 
 @article{Oldenburg2020a,
-    author = {Douglas W. Oldenburg and Lindsey J. Heagy and Seogi Kang and Rowan Cockett},
-    title = {3D electromagnetic modelling and inversion: a case for open source},
-    journal = {Exploration Geophysics},
-    volume = {51},
-    number = {1},
-    pages = {25-37},
-    year  = {2020},
-    publisher = {Taylor & Francis},
-    doi = {10.1080/08123985.2019.1580118},
+    abstract = {Electromagnetics has an important role to play in solving the next generation of geoscience problems. These problems are multidisciplinary, complex, and require collaboration. This is especially true at the base scientific level, where the underlying physical equations need to be solved, and data, associated with physical experiments, need to be inverted. In this paper, we present arguments for adopting an open-source methodology for geophysics and provide some background about open-source software for electromagnetics. Immediate benefits are the reduced time required to carry out research, being able to collaborate, having reproducible results, and being able to disseminate results quickly. To illustrate the use of an open-source methodology in electromagnetics, we present two challenges. The first is to simulate data from a time-domain airborne system over a conductive plate buried in a more resistive earth. The second is to jointly invert airborne time-domain electromagnetic (TDEM) and frequency-domain electromagnetic (FDEM) data with ground TDEM. SimPEG (Simulation and Parameter Estimation in Geophysics, https://simpeg.xyz) is used for the open-source software. The figures in this paper can be reproduced by downloading the Jupyter notebooks we provide with this paper (https://github.com/simpeg-research/oldenburg-2018-AEM). Access to the source code allows the researcher to explore simulations and inversions by changing model and inversion parameters, plot fields and fluxes to gain further insight on the electromagnetic phenomena, and solve a new research problem by using open-source software as a base. By providing results in a manner that allows others to reproduce, further explore, and even extend them, we hope to demonstrate that an open-source paradigm has the potential to enable more rapid progress in the geophysics community as a whole.},
     archivePrefix = {arXiv},
-    arxivId = {1902.08245}
+    arxivId = {1902.08245},
+    author = {Oldenburg, Douglas W. and Heagy, Lindsey J. and Kang, Seogi and Cockett, Rowan},
+    doi = {10.1080/08123985.2019.1580118},
+    eprint = {1902.08245},
+    issn = {0812-3985},
+    journal = {Exploration Geophysics},
+    keywords = {3D modelling,airborne electromagnetics,electromagnetic geophysics,inversion,programming},
+    month = {jan},
+    number = {1},
+    pages = {25--37},
+    title = {{3D electromagnetic modelling and inversion: a case for open source}},
+    url = {https://github.com/simpeg-research/oldenburg-2018-AEM},
+    volume = {51},
+    year = {2020}
 }
 
 
 % 2019
 
 @article{Heagy2019,
-    author = {Heagy, Lindsey J and Oldenburg, Douglas W},
-    title = "{Direct current resistivity with steel-cased wells}",
-    journal = {Geophysical Journal International},
-    volume = {219},
-    number = {1},
-    pages = {1-26},
-    year = {2019},
-    month = {06},
-    abstract = "{The work in this paper is motivated by the increasing use of electrical and electromagnetic methods in geoscience problems where steel-cased wells are present. Applications of interest include monitoring carbon capture and storage and hydraulic fracturing operations. Also of interest is detecting flaws or breaks in degrading steel-casings—such wells pose serious environmental hazards. The general principles of electrical methods with steel-cased wells are understood and several authors have demonstrated that the presence of steel-cased wells can be beneficial for detecting signal due to targets at depth. However, the success of a direct current (DC) resistivity survey lies in the details. Secondary signals might only be a few per cent of the primary signal. In designing a survey, the geometry of the source and receivers, and whether the source is at the top of the casing, inside of it, or beneath the casing will impact measured responses. Also the physical properties and geometry of the background geology, target and casing will have a large impact on the measured data. Because of the small values of the diagnostic signals, it is important to understand the detailed physics of the problem and also to be able to carry out accurate simulations. This latter task is computationally challenging because of the extreme geometry of the wells, which extend kilometers in depth but have millimeter variations in the radial direction, and the extreme variation in the electrical conductivity which is typically 5–7 orders of magnitude larger than that of the background geology.In this paper, we adopt a cylindrical discretization for numerical simulations to investigate three important aspects of DC resistivity in settings with steel-cased wells. (1) We examine the feasibility of using a surface-based DC resistivity survey for diagnosing impairments along a well in a casing integrity experiment. This parameter study demonstrates the impact of the background conductivity, the conductivity of the casing, the depth of the flaw, and the proportion of the casing circumference that is compromised on amplitude of the secondary electric fields measured at the surface. (2) Next, we consider elements of survey design for exciting a conductive or resistive target at depth. We show that conductive targets generate stronger secondary responses than resistive targets, and that having an electrical connection between the target and well can significantly increase the measured secondary responses. (3) Finally, we examine common strategies for approximating the fine-scale structure of a steel cased well with a coarse-scale representation to reduce computational load. We show that for DC resistivity experiments, the product of the conductivity and the cross-sectional area of the casing is the important quantity for controlling the distribution of currents and charges along its length.To promote insight into the physics, we present results by plotting the currents, charges, and electric fields in each of the scenarios examined. All of the examples shown in this paper are built on open-source software and are available as Jupyter notebooks.}",
-    issn = {0956-540X},
-    doi = {10.1093/gji/ggz281},
-    url = {https://doi.org/10.1093/gji/ggz281},
-    eprint = {https://academic.oup.com/gji/article-pdf/219/1/1/28925277/ggz281.pdf},
+    abstract = {The work in this paper is motivated by the increasing use of electrical and electromagnetic methods in geoscience problems where steel-cased wells are present. Applications of interest include monitoring carbon capture and storage and hydraulic fracturing operations. Also of interest is detecting flaws or breaks in degrading steel-casings—such wells pose serious environmental hazards. The general principles of electrical methods with steel-cased wells are understood and several authors have demonstrated that the presence of steel-cased wells can be beneficial for detecting signal due to targets at depth. However, the success of a direct current (DC) resistivity survey lies in the details. Secondary signals might only be a few per cent of the primary signal. In designing a survey, the geometry of the source and receivers, and whether the source is at the top of the casing, inside of it, or beneath the casing will impact measured responses. Also the physical properties and geometry of the background geology, target and casing will have a large impact on the measured data. Because of the small values of the diagnostic signals, it is important to understand the detailed physics of the problem and also to be able to carry out accurate simulations. This latter task is computationally challenging because of the extreme geometry of the wells, which extend kilometers in depth but have millimeter variations in the radial direction, and the extreme variation in the electrical conductivity which is typically 5–7 orders of magnitude larger than that of the background geology.},
     archivePrefix = {arXiv},
-    arxivId = {1810.12446}
+    arxivId = {1810.12446},
+    author = {Heagy, Lindsey J. and Oldenburg, Douglas W.},
+    doi = {10.1093/gji/ggz281},
+    eprint = {1810.12446},
+    issn = {0956-540X},
+    journal = {Geophysical Journal International},
+    keywords = {Downhole methods,Electrical properties,Electrical resistivity tomography (ERT),Electromagnetic theory,Numerical modelling},
+    month = {oct},
+    number = {1},
+    pages = {1--26},
+    title = {{Direct current resistivity with steel-cased wells}},
+    url = {https://github.com/simpeg-research/heagy-2018-dc-casing},
+    volume = {219},
+    year = {2019}
 }
 
 @article{Heagy2019a,
-    title = {Modeling electromagnetics on cylindrical meshes with applications to steel-cased wells},
-    journal = {Computers & Geosciences},
-    volume = {125},
-    pages = {115-130},
-    year = {2019},
-    issn = {0098-3004},
-    doi = {https://doi.org/10.1016/j.cageo.2018.11.010},
-    url = {https://www.sciencedirect.com/science/article/pii/S009830041830390X},
-    author = {Lindsey J. Heagy and Douglas W. Oldenburg},
-    keywords = {Finite volume, Partial differential equations, Time domain electromagnetics, Frequency domain electromagnetics, Direct current resistivity, Boreholes},
-    abstract = {Simulating direct current resistivity, frequency domain electromagnetics and time domain electromagnetics in settings where steel cased boreholes are present is of interest across a range of applications including well-logging, monitoring subsurface injections such as hydraulic fracturing or carbon capture and storage. In some surveys, well-casings have been used as “extended electrodes” for near surface environmental or geotechnical applications. Wells are often cased with steel, which has both a high conductivity and a significant magnetic permeability. The large physical property contrasts as well as the large disparity in length-scales, which are introduced when a steel-cased well is in a modeling domain, makes performing an electromagnetic forward simulation challenging. Using this setting as motivation, we present a finite volume approach for modeling electromagnetic problems on cylindrically symmetric and 3D cylindrical meshes which include an azimuthal discretization. The associated software implementation includes modeling capabilities for direct current resistivity, time domain electromagnetics, and frequency domain electromagnetics for models that include variable electrical conductivity and magnetic permeability. Electric and magnetic fields, fluxes, and charges are readily accessible in any simulation so that they can be visualized and interrogated. We demonstrate the value of being able to explore the behavior of electromagnetic fields and fluxes through examples which revisit a number of foundational papers on direct current resistivity and electromagnetics in steel-cased wells. The software implementation is open source and included as a part of the SimPEG software ecosystem for simulation and parameter estimation in geophysics.},
+    abstract = {Simulating direct current resistivity, frequency domain electromagnetics and time domain electromagnetics in settings where steel cased boreholes are present is of interest across a range of applications including well-logging, monitoring subsurface injections such as hydraulic fracturing or carbon capture and storage. In some surveys, well-casings have been used as `extended electrodes' for near surface environmental or geotechnical applications. Wells are often cased with steel, which has both a high conductivity and a significant magnetic permeability. The large physical property contrasts as well as the large disparity in length-scales, which are introduced when a steel-cased well is in a modeling domain, makes performing an electromagnetic forward simulation challenging. Using this setting as motivation, we present a finite volume approach for modeling electromagnetic problems on cylindrically symmetric and 3D cylindrical meshes which include an azimuthal discretization. The associated software implementation includes modeling capabilities for direct current resistivity, time domain electromagnetics, and frequency domain electromagnetics for models that include variable electrical conductivity and magnetic permeability. Electric and magnetic fields, fluxes, and charges are readily accessible in any simulation so that they can be visualized and interrogated. We demonstrate the value of being able to explore the behaviour of electromagnetic fields and fluxes through examples which revisit a number of foundational papers on direct current resistivity and electromagnetics in steel-cased wells. The software implementation is open source and included as a part of the SimPEG software ecosystem for simulation and parameter estimation in geophysics.},
     archivePrefix = {arXiv},
-    arxivId = {1804.07991}
+    arxivId = {1804.07991},
+    author = {Heagy, Lindsey J. and Oldenburg, Douglas W.},
+    doi = {10.1016/j.cageo.2018.11.010},
+    eprint = {1804.07991},
+    issn = {00983004},
+    journal = {Computers & Geosciences},
+    keywords = {Boreholes,Direct current resistivity,Finite volume,Frequency domain electromagnetics,Partial differential equations,Time domain electromagnetics},
+    month = {apr},
+    number = {November 2018},
+    pages = {115--130},
+    publisher = {Elsevier Ltd},
+    title = {{Modeling electromagnetics on cylindrical meshes with applications to steel-cased wells}},
+    url = {https://github.com/simpeg-research/heagy-2018-emcyl},
+    volume = {125},
+    year = {2019}
 }
 
 
 % 2018
 
-@article{cockett2018efficient,
-    title = {Efficient 3D inversions using the Richards equation},
-    author = {Cockett, Rowan and Heagy, Lindsey J and Haber, Eldad},
-    journal = {Computers \& Geosciences},
-    volume = {116},
-    pages = {91--102},
-    year = {2018},
-    publisher = {Elsevier},
+@article{Cockett2018,
+    abstract = {Copyright {\textcopyright} 2017, arXiv, All rights reserved. Fluid ow in the vadose zone is governed by Richards equation; it is parameterized by hydraulic conductivity, which is a nonlinear function of pressure head. Investigations in the vadose zone typically require characterizing distributed hydraulic properties. Saturation or pressure head data may include direct measurements made from boreholes. Increasingly, proxy measurements from hydrogeophysics are being used to supply more spatially and temporally dense data sets. Inferring hydraulic parameters from such datasets requires the ability to efficiently solve and deterministically optimize the nonlinear time domain Richards equation. This is particularly important as the number of parameters to be estimated in a vadose zone inversion continues to grow. In this paper, we describe an efficient technique to invert for distributed hydraulic properties in 1D, 2D, and 3D. Our algorithm does not store the Jacobian, but rather computes the product with a vector, which allows the size of the inversion problem to become much larger than methods such as finite difference or automatic differentiation; which are constrained by computation and memory, respectively. We show our algorithm in practice for a 3D inversion of saturated hydraulic conductivity using saturation data through time. The code to run our examples is open source and the algorithm presented allows this inversion process to run on modest computational resources. Submitted to: Inverse Problems.},
+    author = {Cockett, Rowan and Heagy, Lindsey J. and Haber, Eldad},
     doi = {10.1016/j.cageo.2018.04.006},
-    archivePrefix = {arXiv},
-    arxivId = {1706.03381}
+    issn = {00983004},
+    journal = {Computers & Geosciences},
+    keywords = {Finite volume,Hydrogeophysics,Inversion,Parameter estimation,Richards equation},
+    month = {jul},
+    pages = {91--102},
+    title = {{Efficient 3D inversions using the Richards equation}},
+    volume = {116},
+    year = {2018}
 }
 
 
 
 % 2017
 
+@inproceedings{Heagy2017a,
+    author = {Heagy, Lindsey J and Cockett, Rowan and Oldenburg, Douglas W},
+    booktitle = {Proceedings of the Sixth International Symposium in Three-Dimensional Electromagnetics},
+    keywords = {forward modeling,object oriented,sensitivities,steel cased wells},
+    pages = {125--129},
+    title = {{Modular electromagnetic simulations with applications to steel cased wells}},
+    url = {http://www.gwhohmann.org/3dem-6-proceedings-download.html},
+    year = {2017}
+}
+
 @article{Heagy2017,
-    title = {A framework for simulation and inversion in electromagnetics},
-    author = {Heagy, Lindsey J and Cockett, Rowan and Kang, Seogi and Rosenkjaer, Gudni K and Oldenburg, Douglas W},
-    journal = {Computers \& Geosciences},
-    volume = {107},
-    pages = {1--19},
-    year = {2017},
-    publisher = {Elsevier},
-    doi = {10.1016/j.cageo.2017.06.018},
+    abstract = {Simulations and inversions of geophysical electromagnetic data are paramount for discerning meaningful information about the subsurface from these data. Depending on the nature of the source electromagnetic experiments may be classified as time-domain or frequency-domain. Multiple heterogeneous and sometimes anisotropic physical properties, including electrical conductivity and magnetic permeability, may need be considered in a simulation. Depending on what one wants to accomplish in an inversion, the parameters which one inverts for may be a voxel-based description of the earth or some parametric representation that must be mapped onto a simulation mesh. Each of these permutations of the electromagnetic problem has implications in a numerical implementation of the forward simulation as well as in the computation of the sensitivities, which are required when considering gradient-based inversions. This paper proposes a framework for organizing and implementing electromagnetic simulations and gradient-based inversions in a modular, extensible fashion. We take an object-oriented approach for defining and organizing each of the necessary elements in an electromagnetic simulation, including: the physical properties, sources, definition of the discrete problem to be solved, the resulting fields and fluxes, and receivers used to sample to the electromagnetic responses. A corresponding implementation is provided as part of the open source simulation and parameter estimation project SimPEG (http://simpeg.xyz). The application of the framework is demonstrated through two synthetic examples. The first example shows the application of the common framework for 1D time domain and frequency domain inversions. The second example demonstrates how the modular implementation is used to compute the sensitivity for a parametric model where a transmitter is positioned inside a steel cased well.},
     archivePrefix = {arXiv},
-    arxivId = {1610.00804}
+    arxivId = {1610.00804},
+    author = {Heagy, Lindsey J. and Cockett, Rowan and Kang, Seogi and Rosenkjaer, Gudni K. and Oldenburg, Douglas W.},
+    doi = {10.1016/j.cageo.2017.06.018},
+    eprint = {1610.00804},
+    issn = {00983004},
+    journal = {Computers & Geosciences},
+    keywords = {Finite volume,Geophysics,Numerical modelling,Object oriented,Sensitivities,finite volume,geophysics,numerical modelling,object oriented,sensitivities},
+    month = {oct},
+    number = {July},
+    pages = {1--19},
+    publisher = {Pergamon},
+    title = {{A framework for simulation and inversion in electromagnetics}},
+    volume = {107},
+    year = {2017}
 }
 
 
 @article{Kang2017,
-    author = {Kang, S. and Heagy, L.J. and Cockett, R. and Oldenburg, D.W.},
+    abstract = {At some point in many geophysical workflows, an inversion is a necessary step for answering the geoscientific question at hand, whether it is recovering a reflectivity series from a seismic trace in a deconvolution problem, finding a susceptibility model from magnetic data, or recovering conductivity from an electromagnetic survey. This is particularly true when working with data sets where it may not even be clear how to plot the data: 3D direct current resistivity and induced polarization surveys (it is not necessarily clear how to organize data into a pseudosection) or multicomponent data, such as electromagnetic data (we can measure three spatial components of electric and/or magnetic fields through time over a range of frequencies). Inversion is a tool for translating these data into a model we can interpret. The goal of the inversion is to find a “model” — some description of the earth's physical properties — that is consistent with both the data and geologic knowledge.},
+    author = {Kang, Seogi and Heagy, Lindsey J. and Cockett, Rowan and Oldenburg, Douglas W.},
     doi = {10.1190/tle36080696.1},
-    issn = {19383789},
-    journal = {Leading Edge},
+    issn = {1070-485X},
+    journal = {The Leading Edge},
+    month = {aug},
     number = {8},
+    pages = {696--699},
     title = {{Exploring nonlinear inversions: A 1D magnetotelluric example}},
     volume = {36},
     year = {2017}
@@ -205,25 +250,30 @@
 % 2016
 
 @article{Cockett2016,
-    title = {Pixels and their neighbors: Finite volume},
-    author = {Cockett, Rowan and Heagy, Lindsey J and Oldenburg, Douglas W},
+    abstract = {We take you on the journey from continuous equations to their discrete matrix representations using the finite-volume method for the direct current (DC) resistivity problem. These techniques are widely applicable across geophysical simulation types and have their parallels in finite element and finite difference. We show derivations visually, as you would on a whiteboard, and have provided an accompanying notebook at http://github.com/seg to explore the numerical results using SimPEG ( Cockett et al., 2015 ).},
+    author = {Cockett, Rowan and Heagy, Lindsey J. and Oldenburg, Douglas W.},
+    doi = {10.1190/tle35080703.1},
+    issn = {1070-485X},
     journal = {The Leading Edge},
-    volume = {35},
+    keywords = {DC equations,Direct current,Finite-volume method,Resistivity},
+    month = {aug},
     number = {8},
     pages = {703--706},
-    year = {2016},
-    publisher = {Society of Exploration Geophysicists},
-    doi = {10.1190/tle35080703.1}
+    title = {{Pixels and their neighbors: Finite volume}},
+    volume = {35},
+    year = {2016}
 }
 
-@incollection{Yang2016,
-    title = {3D DC resistivity modeling of steel casing for reservoir monitoring using equivalent resistor network},
+@inproceedings{Yang2016,
     author = {Yang, Dikun and Oldenburg, Douglas and Heagy, Lindsey},
     booktitle = {SEG Technical Program Expanded Abstracts 2016},
+    doi = {10.1190/segam2016-13868475.1},
+    month = {sep},
+    organization = {Abstract},
     pages = {932--936},
-    year = {2016},
     publisher = {Society of Exploration Geophysicists},
-    doi = {10.1190/segam2016-13868475.1}
+    title = {{3D DC resistivity modeling of steel casing for reservoir monitoring using equivalent resistor network}},
+    year = {2016}
 }
 
 % 2015
@@ -236,9 +286,9 @@
     keywords = {Electromagnetics,Geophysics,Inversion,Numerical modeling,Object-oriented programming,Sensitivities},
     month = {dec},
     pages = {142--154},
-    publisher = {Elsevier},
+    publisher = {Pergamon},
     title = {{SimPEG: An open source framework for simulation and gradient based parameter estimation in geophysical applications}},
-    url = {http://linkinghub.elsevier.com/retrieve/pii/S009830041530056X},
+    url = {https://simpeg.xyz},
     volume = {85},
     year = {2015}
 }
@@ -248,46 +298,48 @@
     booktitle = {SEG Technical Program Expanded Abstracts 2015},
     doi = {10.1190/segam2015-5931035.1},
     month = {aug},
+    organization = {OnePetro},
     pages = {699--703},
     publisher = {Society of Exploration Geophysicists},
     title = {{Modelling electromagnetic problems in the presence of cased wells}},
-    url = {http://library.seg.org/doi/10.1190/segam2015-5931035.1},
     year = {2015}
 }
 
-@article{Kang2015,
-    author = {Kang, Seogi and Cockett, Rowan and Heagy, Lindsey J and Oldenburg, Douglas W},
+@inproceedings{Kang2015,
+    abstract = {Summary Electromagnetic (EM) methods are used to characterize the electrical conductivity distribution of the earth. EM geophysical surveys are increasingly being simulated and inverted in 3D, due in part to computational advances. However, the availability of computational resources does not invalidate the use of lower dimensional formulations and methods, which can be useful depending on the geological complexity as well as the survey geometry. Due to their computational speed, simulations in 1D or 2D can also be used to quickly gain geologic insight. For example, this insight can be used in an EM inversion starting with a 1D inversion, then building higher dimensionality into the model progressively. As such, we require a set of tools that allow a geophysicists to easily explore various model dimensionalities, such as 1D, 2D, and 3D, in the EM inversion. In this study, we suggest a mapping methodology that transforms the inversion model to a physical property for use in the forward simulations. Using this general methodology, we apply an EM inversion to a suite of models in one, two, and three dimensions, and suggest the importance of choosing an appropriate model space based on the goal of the EM inversion.},
+    author = {Kang, Seogi and Cockett, Rowan and Heagy, Lindsey J. and Oldenburg, Douglas W.},
+    booktitle = {SEG Technical Program Expanded Abstracts 2015},
     doi = {10.1190/segam2015-5930379.1},
+    issn = {19494645},
     keywords = {electromagnetic,groundwater,inversion,mapping},
+    month = {aug},
     number = {2},
     pages = {5000--5004},
+    publisher = {Society of Exploration Geophysicists},
     title = {{Moving between dimensions in electromagnetic inversions}},
     year = {2015}
 }
-
 % 2014
 
-@misc{Heagy2014a,
-    author = {Heagy, Lindsey J and Cockett, A Rowan and Oldenburg, Douglas W},
+@inproceedings{Heagy2014,
+    abstract = {SummaryHydraulic fracturing is an important technique to allow mobilization of hydrocarbons in tight reservoirs. Sand or ceramic proppant is pumped into the fractured reservoir to ensure fractures remain open and permeable after the hydraulic treatment. As such, the distribution of proppant is a controlling factor on where the reservoir is permeable and can be effectively drained. Methods to monitor the fracturing process, such as tiltmeters or microseismic, are not sensitive to proppant distributions in the subsurface after the fracturing treatment is complete (Cipolla and Wright, 2000).An electrically conductive proppant could create a significant physical property contrast between the propped region of the reservoir and the host rock. Electromagnetic geophysical methods can be used to image this property (Heagy and Oldenburg, 2013). However, traditional geophysical inversions are poorly constrained, requiring a-priori information to be incorporated through known electrical properties. We examine a strategy to invert directly for the proppant volume using a parametrization of electrical conductivity in terms of proppant distribution within the reservoir.},
+    author = {Heagy, Lindsey J and Cockett, A Rowan and Oldenburg, Douglas W and Heagy*, Lindsey J and Cockett, A Rowan and Oldenburg, Douglas W},
     booktitle = {SEG Technical Program Expanded Abstracts 2014},
     doi = {10.1190/segam2014-1639.1},
     keywords = {electromagnetic,fractures,inversion,unconventio},
     month = {aug},
     pages = {865--869},
     publisher = {Society of Exploration Geophysicists},
-    title = {{Parametrized Inversion Framework for Proppant Volume in a Hydraulically Fractured Reservoir}},
-    url = {http://library.seg.org/doi/abs/10.1190/segam2014-1639.1},
+    title = {{Parametrized inversion framework for proppant volume in a hydraulically fractured reservoir}},
     year = {2014}
 }
-
-@article{Heagy2014,
-    author = {Heagy, LJ and Oldenburg, DW and Chen, J},
-    journal = {GeoConvention 2014, CSEG, Search and Discovery Article 90224},
+@inproceedings{Heagy2014a,
+    author = {Heagy, Lindsey J Lj and Oldenburg, Douglas W DW and Chen, Jiuping},
+    booktitle = {Geoconvention.Com},
     pages = {1--7},
     title = {{Where does the proppant go? Examining the application of electromagnetic methods for hydraulic fracture characterization}},
     url = {http://www.geoconvention.com/uploads/abstracts/334_GC2014_Where_does_the_proppant_go.pdf},
     year = {2014}
 }
-
 
 
